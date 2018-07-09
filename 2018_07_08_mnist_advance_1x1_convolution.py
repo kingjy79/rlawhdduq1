@@ -49,19 +49,20 @@ def conv2d(x, W):
 def max_pool_2x2(x):
   return tf.nn.max_pool(x, ksize=[1, 2, 2, 1],
                         strides=[1, 2, 2, 1], padding='SAME')
-
 #0th convolution layer
 W_conv0 = weight_variable([5, 5, 1, 8])
 b_conv0 = weight_variable([8])
 
 x_image = tf.reshape(x, [-1,28,28,1])
 
-h_conv0 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1)
+h_conv0 = tf.nn.relu(conv2d(x_image, W_conv0) + b_conv0)
 h_pool0 = h_conv0 ##Don't use pooling in this layer
 
 #1st convolution layer
 W_conv1 = weight_variable([5, 5, 8, 32])
 b_conv1 = bias_variable([32])
+
+x_image = tf.reshape(x, [-1,28,28,1])
 
 h_conv1 = tf.nn.relu(conv2d(h_pool0, W_conv1) + b_conv1)
 h_pool1 = max_pool_2x2(h_conv1)
