@@ -1,0 +1,15 @@
+C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/lab7/work/tb_lab7_doorlock.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/lab7/work/tb_lab7_doorlock.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_lab7_doorlook
+
+Top level modules:
+	tb_lab7_doorlook
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/lab7/work/lab7_doorlock.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/lab7/work/lab7_doorlock.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lab7_doorlock
+
+Top level modules:
+	lab7_doorlock
+
+} {} {}}
