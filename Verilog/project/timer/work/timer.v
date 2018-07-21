@@ -15,14 +15,17 @@ reg [16-1:0] max_counter;
 reg [16-1:0] pwm_counter;
 reg [16-1:0] stop_count;
 
+
 //after compile this file,I will modify this parameter to optimizition.
 localparam S0=1'b0, S1=1'b1;
 reg [2-1:0] c_state, n_state;
 reg [16-1:0] inner_count;
-reg [7-1:0] cycle_count;
+reg [7-1:0] cycle_count; //depending how much..100.
+reg [3-1:0] end_count;
+
 always @(posedge i_clk, negedge i_rstn) begin 
-	if(!i_rstn) begin //stop reset
-		o_pwm<=0;
+	if(!i_rstn) begin //stop reset -> driving this module.
+		o_pwm<=0; //all reg initialization.
 		o_timer_end<=0;
 		c_state<=S0;
 		n_state<=S0;
@@ -32,26 +35,38 @@ always @(posedge i_clk, negedge i_rstn) begin
 		stop_count<=0;
 		inner_count<=0;
 		cycle_count<=0;
+		end_count<=0;
 		end
 
 	else begin
-		c_state<=n_state;
-		inner_count<=inner_count+1;
+		c_state<=n_state; //while Driving
+		inner_count<=inner_count+1;//inner_count is operated for o_pwm.
+		if(stop_count>=cycle_count) begin//cycle_count is comfirm that it approch stop_count times.
+			if(end_count<10) begin
+				o_time_end<=1;
+				end_count=end_count+1;
+				end
+			else begin
+				o_time_end<=0;
+				end
+			
+			
+			
 		if(c_state==S1) begin
 			if(pwm_count<=inner_count && inner_count<max_count) begin
-				o_pwm=1;
+				o_pwm=1;//In special range, It will have value 1 
 				end
 			else if(inner_count<pwm_count) begin
 				o_pwm=0;
 				end
-			else //inner_count==max_count
+			else //inner_count>=max_count
 				cycle_count<=cycle_count+1;
 			if(stop_count==cycle_count) begin
 				o_timer_end<=1;
 		end
 	end
 
-always @(*) begin  
+always @(*) begin //fetch? information from decoder. 
 	case(c_state)
 		S0:begin    
   			if(i_start==1) begin
@@ -84,3 +99,4 @@ always @(*) begin
     	    
 
 endmodule 
+
