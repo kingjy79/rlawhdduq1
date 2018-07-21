@@ -1,5 +1,3 @@
-`timescale 10ns/10ns
-
 module timer(
 input i_clk, i_rstn, i_start, i_we, //Don't control input in module!!!
 input [1:0] i_adder,
@@ -27,6 +25,7 @@ always @(posedge i_clk, negedge i_rstn) begin
 		o_pwm<=0;
 		o_timer_end<=0;
 		c_state<=S0;
+		n_state<=S0;
 		enable_to_dcount<=0;
 		max_counter<=0;
 		pwm_counter<=0;
@@ -37,15 +36,18 @@ always @(posedge i_clk, negedge i_rstn) begin
 
 	else begin
 		c_state<=n_state;
-		inner_count=inner_count+1;
+		inner_count<=inner_count+1;
 		if(c_state==S1) begin
-			if(pwm_count<=inner_count && inner_count<=max_count) begin
+			if(pwm_count<=inner_count && inner_count<max_count) begin
 				o_pwm=1;
-				cycle_count=cycle_count+1;
 				end
-			else
+			else if(inner_count<pwm_count) begin
 				o_pwm=0;
-			if(stop_count==
+				end
+			else //inner_count==max_count
+				cycle_count<=cycle_count+1;
+			if(stop_count==cycle_count) begin
+				o_timer_end<=1;
 		end
 	end
 
