@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer
+vdecoder_2bit
+Z0 !s110 1532237946
+!i10b 1
+!s100 BhKZPbRQ0YPPe`3L7Oz;62
+IR_gHFdohk6Q_^5aXPd4c31
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy
+w1532178220
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/decoder_2bit.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/decoder_2bit.v
+L0 3
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1532237945.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/decoder_2bit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/decoder_2bit.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vtb_timer_mealy
+R0
+!i10b 1
+!s100 1UW^8P3M5A138;K499mM93
+IC6;g?`c2hS?;nookoCjK60
+R1
+R2
+w1532233778
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/tb_timer_mealy.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/tb_timer_mealy.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z6 !s108 1532237946.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/tb_timer_mealy.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/tb_timer_mealy.v|
+!i113 1
+R4
+R5
+vtimer_mealy
+R0
+!i10b 1
+!s100 [EeFBnBSDMI5mL>ThH1;W3
+I;kRdGBmLzAWZYe3SZ39k:0
+R1
+R2
+w1532237941
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/timer_mealy.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/timer_mealy.v
+L0 1
+R3
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/timer_mealy.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy/work/timer_mealy.v|
+!i113 1
+R4
+R5

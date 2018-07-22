@@ -1,0 +1,22 @@
+C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_moore/work/tb_timer_moore.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_moore/work/tb_timer_moore.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_timer_moore
+
+Top level modules:
+	tb_timer_moore
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_moore/work/timer_moore.v {1 {vlog -work work -stats=none {C:\Users\kingjy79\Documents\rlawhdduq1\Verilog\project\timer_moore\work\timer_moore.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module timer_moore
+
+Top level modules:
+	timer_moore
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_moore/work/decoder_2bit.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_moore/work/decoder_2bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module decoder_2bit
+
+Top level modules:
+	decoder_2bit
+
+} {} {}}
