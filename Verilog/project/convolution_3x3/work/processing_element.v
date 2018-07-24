@@ -20,7 +20,7 @@ adder #(.BW1(BW1), .BW2(BW2)) add0 (
 						.i_data(result_multiply),
 						.i_psum(i_psum),
 						.o_data(result_adder));
-d_ff #(.N(N)) dff0 (
+d_ff_n_bit #(.N(N)) dff0 (
 					.i_clk(i_clk),
 					.i_rst_n(i_rst_n),
 					.i_data(result_adder),

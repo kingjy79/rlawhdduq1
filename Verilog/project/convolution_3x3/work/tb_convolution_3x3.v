@@ -11,7 +11,7 @@ wire signed [O_BW-1:0] o_y;
 
 convolution_3x3
 #(.I_BW(I_BW), .O_BW(O_BW), .X_BW(X_BW), .W_BW(W_BW), .DFF_BW(DFF_BW), .DFF_TIMES(DFF_TIMES))
-(
+con0 (
 	.i_clk(i_clk),
 	.i_rst_n(i_rst_n),
 	.i_x(i_x),
@@ -30,16 +30,18 @@ i_psum=0;
 @(posedge i_clk);
 #1 i_rst_n=1;
 @(posedge i_clk);
-#1 	i_x=8'd100; i_w=8'd50; i_psum=16'd100;
+#1 	i_x=8'd100; i_w=8'd50; 
 #10 i_x=8'd10; i_w=8'd5;
-#10 i_x=8'd10; i_w=8'd5;
-#10 i_x=8'd10; i_w=8'd5;
-#10 i_x=8'd10; i_w=8'd5;
-#30 i_x=0; i_w=0; i_psum=0;
+#10 i_x=8'd100; i_w=8'd15;
+#10 i_x=8'd20; i_w=8'd50;
+#10 i_x=8'd100; i_w=8'd50;
+#10 i_x=8'd10; i_w=8'd40;
+#10 i_x=8'd16; i_w=8'd5;
+#10 i_x=0; i_w=0; i_psum=0;
 
 
 
-repeat(20)@(posedge i_clk);
+repeat(2)@(posedge i_clk);
 $finish;
 end
 
