@@ -1,0 +1,178 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/timer_mealy
+vadder
+Z0 !s110 1532415117
+!i10b 1
+!s100 Y2?[<gS;`>MZk=31_THOD2
+IU^IE97034F1jzKe=hT0h^3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element
+w1532403903
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/adder.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1532415117.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/adder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vd_ff
+R0
+!i10b 1
+!s100 _4Zg_Z@EXA3nnFAM>TTZU2
+I[i@M2[hLaEMW?fkKMP^M=1
+R1
+R2
+Z7 w1532403902
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/d_ff.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/d_ff.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/d_ff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/d_ff.v|
+!i113 1
+R5
+R6
+vmultiply
+R0
+!i10b 1
+!s100 ;]IaOfGXzo?Xf5z0`>RZk3
+IQmTLl]@0HGCWUbZNY7KkU1
+R1
+R2
+R7
+Z8 8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/multiply.v
+Z9 FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/multiply.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z10 !s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/multiply.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/multiply.v|
+!i113 1
+R5
+R6
+vmultiyply
+!s110 1532339524
+!i10b 1
+!s100 HKD4K5WSZIEJk1Z`bhU@c0
+IlL87jQ@LZjIlZ]NB75[`<2
+R1
+R2
+w1532339520
+R8
+R9
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1532339524.000000
+R10
+R11
+!i113 1
+R5
+R6
+vmultyply
+!s110 1532339480
+!i10b 1
+!s100 1KEU6GZKRa6CZ_[e<BNSK0
+Ib[UC[fbT6L^4AE<^Qem>k1
+R1
+R2
+w1532339015
+R8
+R9
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1532339480.000000
+R10
+R11
+!i113 1
+R5
+R6
+vprocessing_element
+!s110 1532415119
+!i10b 1
+!s100 n:^=1KazN07MQR@Cn_kiX3
+IPfGc9^m18@^9BEF?Xh0W?3
+R1
+R2
+w1532403900
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/processing_element.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/processing_element.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1532415118.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/processing_element.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/processing_element.v|
+!i113 1
+R5
+R6
+vprocessing_element_top_module
+!s110 1532341309
+!i10b 1
+!s100 e=W_G0mZVof9NBd3:2eWc2
+I8GYg^k4AzW`GajGGGAn0i3
+R1
+R2
+w1532341223
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/processing_element_top_module.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/processing_element_top_module.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1532341309.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/processing_element_top_module.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element/work/processing_element_top_module.v|
+!i113 1
+R5
+R6
+vtb_processing_element
+R0
+!i10b 1
+!s100 DH[Yo3:_loGO^YL5ENH191
+IEm2[]>mH<Dz_o4dTP5iFX0
+R1
+R2
+w1532415106
+8C:\Users\kingjy79\Documents\rlawhdduq1\Verilog\project\processing_element\work\tb_processing_element.v
+FC:\Users\kingjy79\Documents\rlawhdduq1\Verilog\project\processing_element\work\tb_processing_element.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\kingjy79\Documents\rlawhdduq1\Verilog\project\processing_element\work\tb_processing_element.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\kingjy79\Documents\rlawhdduq1\Verilog\project\processing_element\work\tb_processing_element.v|
+!i113 1
+R5
+R6

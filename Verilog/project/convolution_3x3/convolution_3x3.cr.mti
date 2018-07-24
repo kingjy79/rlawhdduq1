@@ -1,0 +1,65 @@
+C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/adder.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/multiply.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/multiply.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module multiply
+
+Top level modules:
+	multiply
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v {0 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module convolution_3x3
+** Error: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(5): (vlog-2730) Undefined variable: 'XW'.
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(5): (vlog-2388) 'i_x' already declared in this scope (convolution_3x3).
+** Error: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(6): (vlog-2730) Undefined variable: 'WW'.
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(6): (vlog-2388) 'i_w' already declared in this scope (convolution_3x3).
+** Error: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(7): (vlog-2730) Undefined variable: 'BW1'.
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(7): (vlog-2388) 'i_psum' already declared in this scope (convolution_3x3).
+** Error: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(8): (vlog-2730) Undefined variable: 'YW'.
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(8): (vlog-2388) 'o_y' already declared in this scope (convolution_3x3).
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(20): (vlog-2388) 'r_psum0' already declared in this scope (convolution_3x3).
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(31): (vlog-2388) 'r_psum1' already declared in this scope (convolution_3x3).
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(42): (vlog-2388) 'r_psum2' already declared in this scope (convolution_3x3).
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(53): (vlog-2388) 'r_psum3' already declared in this scope (convolution_3x3).
+** Error: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(62): 'pe0_0' already declared in this scope.
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(64): (vlog-2388) 'r_psum4' already declared in this scope (convolution_3x3).
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(71): (vlog-2388) 'r_sat0' already declared in this scope (convolution_3x3).
+** Error (suppressible): C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(78): (vlog-2367) Multiple connections to the same port: i_data.
+** Error: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(5): Identifier must be declared with a port mode: i_x.
+** Error: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(6): Identifier must be declared with a port mode: i_w.
+** Error: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(7): Identifier must be declared with a port mode: i_psum.
+** Error: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v(8): Identifier must be declared with a port mode: o_y.
+
+} {4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 16.0 17.0 20.0 24.0} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/generate_d_ff.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/generate_d_ff.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module generate_d_ff
+
+Top level modules:
+	generate_d_ff
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/d_ff_n_bit.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/d_ff_n_bit.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module d_ff_n_bit
+
+Top level modules:
+	d_ff_n_bit
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/processing_element.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/processing_element.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module processing_element
+
+Top level modules:
+	processing_element
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/saturation.v {0 vlog\ -work\ work\ -stats=none\ C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/saturation.v\nModel\ Technology\ ModelSim\ -\ Intel\ FPGA\ Edition\ vlog\ 10.5b\ Compiler\ 2016.10\ Oct\ \ 5\ 2016\n--\ Compiling\ module\ saturation\n**\ Error:\ (vlog-13069)\ C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/saturation.v(7):\ near\ \"\{\":\ syntax\ error,\ unexpected\ '\{',\ expecting\ ','\ or\ '\}'.\n\n {4.0 5.0} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/tb_convolution_3x3.v {0 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/tb_convolution_3x3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_convolution_3x3
+** Error: (vlog-13069) C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/tb_convolution_3x3.v(15): near ".": syntax error, unexpected '.'.
+
+} {4.0 5.0} {}}

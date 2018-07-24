@@ -1,0 +1,43 @@
+C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/generate_processing_element.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/generate_processing_element.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module generate_processing_element
+
+Top level modules:
+	generate_processing_element
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/adder.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/multiply.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/multiply.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module multiply
+
+Top level modules:
+	multiply
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/tb_generate_processing_element.v {1 {vlog -work work2 -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/tb_generate_processing_element.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_generate_processing_element
+
+Top level modules:
+	tb_generate_processing_element
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/processing_element.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/processing_element.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module processing_element
+
+Top level modules:
+	processing_element
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/d_ff.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work/d_ff.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module d_ff
+
+Top level modules:
+	d_ff
+
+} {} {}}
