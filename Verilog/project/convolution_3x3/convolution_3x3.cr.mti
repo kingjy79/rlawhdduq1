@@ -12,12 +12,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	multiply
 
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/tb_convolution_3x3.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/tb_convolution_3x3.v
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/convolution_3x3.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_convolution_3x3
+-- Compiling module convolution_3x3
 
 Top level modules:
-	tb_convolution_3x3
+	convolution_3x3
 
 } {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/processing_element.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/processing_element.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -32,5 +32,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	saturation
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/tb_convolution_3x3.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_3x3/work/tb_convolution_3x3.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_convolution_3x3
+
+Top level modules:
+	tb_convolution_3x3
 
 } {} {}}

@@ -12,15 +12,9 @@ wire signed [O_BW-1:0] r_psum1;
 wire signed [O_BW-1:0] r_psum2;
 wire signed [O_BW-1:0] r_psum3;
 wire signed [O_BW-1:0] r_psum4;
-/* 
-I_BW<==>BW1
-O_BW<==>BW2
-X_BW<==>XW
-W_BW<==>WW
-N<==>DFF_BW
-*/
+wire signed [DFF_BW-1:0] r_sat0;
 
-processing_element #(.BW1(16), .BW2(16), .XW(8), .WW(8), .N(16))
+processing_element #(.BW1(I_BW), .BW2(O_BW), .XW(X_BW), .WW(W_BW), .N(DFF_BW))
 	pe0_0(
 	.i_clk(i_clk),
 	.i_rst_n(i_rst_n),
@@ -31,7 +25,7 @@ processing_element #(.BW1(16), .BW2(16), .XW(8), .WW(8), .N(16))
 
 
 
-processing_element #(.BW1(16), .BW2(17), .XW(8), .WW(8), .N(17))
+processing_element #(.BW1(I_BW), .BW2(O_BW), .XW(X_BW), .WW(W_BW), .N(DFF_BW))
 	pe0_1(
 	.i_clk(i_clk),
 	.i_rst_n(i_rst_n),
@@ -42,7 +36,7 @@ processing_element #(.BW1(16), .BW2(17), .XW(8), .WW(8), .N(17))
 
 
 
-processing_element #(.BW1(17), .BW2(17), .XW(8), .WW(8), .N(17))
+processing_element #(.BW1(I_BW), .BW2(O_BW), .XW(X_BW), .WW(W_BW), .N(DFF_BW))
 	pe0_2(
 	.i_clk(i_clk),
 	.i_rst_n(i_rst_n),
@@ -53,7 +47,7 @@ processing_element #(.BW1(17), .BW2(17), .XW(8), .WW(8), .N(17))
 
 
 
-processing_element #(.BW1(17), .BW2(18), .XW(8), .WW(8), .N(18))
+processing_element #(.BW1(I_BW), .BW2(O_BW), .XW(X_BW), .WW(W_BW), .N(DFF_BW))
 	pe0_3(
 	.i_clk(i_clk),
 	.i_rst_n(i_rst_n),
@@ -64,7 +58,7 @@ processing_element #(.BW1(17), .BW2(18), .XW(8), .WW(8), .N(18))
 
 
 
-processing_element #(.BW1(18), .BW2(19), .XW(8), .WW(8), .N(19))
+processing_element #(.BW1(I_BW), .BW2(O_BW), .XW(X_BW), .WW(W_BW), .N(DFF_BW))
 	pe0_4(
 	.i_clk(i_clk),
 	.i_rst_n(i_rst_n),
@@ -75,12 +69,10 @@ processing_element #(.BW1(18), .BW2(19), .XW(8), .WW(8), .N(19))
 
 
 
-saturation #(.N(19), .K(16))
+saturation #(.N(O_BW), .K(DFF_BW))
 	sat0(
 	.i_data(r_psum4),
 	.o_data(o_y));
 
 
-
 endmodule
-
