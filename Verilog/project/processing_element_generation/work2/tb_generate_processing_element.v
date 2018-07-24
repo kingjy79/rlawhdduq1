@@ -27,10 +27,10 @@ i_psum=0;
 @(posedge i_clk);
 #1 i_rst_n=1;
 @(posedge i_clk);
-#1 	i_x=8'd1; i_w=8'd5; i_psum=16'd10;
-#10 i_x=8'd2; i_w=8'd6; i_psum=16'd5;
-#10 i_x=8'd3; i_w=8'd7; i_psum=16'd1;
-#30 i_x=0; i_w=0; i_psum=0;
+#1 	i_x=8'd1; i_w=8'd5; 
+#10 i_x=8'd2; i_w=8'd6;
+#10 i_x=8'd3; i_w=8'd7; 
+#10 i_x=0; i_w=0; i_psum=0;
 
 
 

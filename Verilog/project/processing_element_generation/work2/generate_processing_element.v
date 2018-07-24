@@ -1,5 +1,5 @@
 module generate_processing_element
-#(parameter XW=1, WW=1, BW1=1, BW2=2, N=1, D=1)(
+#(parameter XW=8, WW=8, BW1=16, BW2=19, N=1, D=1)(
 input i_clk, i_rst_n,
 input signed [XW-1:0] i_x,
 input signed [WW-1:0] i_w,

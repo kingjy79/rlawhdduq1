@@ -12,13 +12,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	d_ff
 
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work2/generate_processing_element.v {1 {vlog -work work2 -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work2/generate_processing_element.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module generate_processing_element
-
-Top level modules:
-	generate_processing_element
-
 } {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work2/multiply.v {1 {vlog -work work2 -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work2/multiply.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module multiply
@@ -33,7 +26,14 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	adder
 
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work2/tb_generate_processing_element.v {1 {vlog -work work2 -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work2/tb_generate_processing_element.v
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work2/generate_processing_element.v {1 {vlog -work work2 -stats=none {C:\Users\kingjy79\Documents\rlawhdduq1\Verilog\project\processing_element_generation\work2\generate_processing_element.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module generate_processing_element
+
+Top level modules:
+	generate_processing_element
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/processing_element_generation/work2/tb_generate_processing_element.v {1 {vlog -work work2 -stats=none {C:\Users\kingjy79\Documents\rlawhdduq1\Verilog\project\processing_element_generation\work2\tb_generate_processing_element.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module tb_generate_processing_element
 
