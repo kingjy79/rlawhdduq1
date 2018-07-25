@@ -1,0 +1,199 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5
+vadder
+Z1 !s110 1532477671
+!i10b 1
+!s100 NX0Fi2ALOdli3>4<jg2GC2
+I:VNX_SBkEch3RgIdaWFj[3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1532436162
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/adder.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1532477671.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/adder.v|
+!s90 -reportprogress|300|-work|work_convolution_first_line|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/adder.v|
+!i113 1
+Z5 o-work work_convolution_first_line
+Z6 tCvgOpt 0
+vconvolution_first_line
+R1
+!i10b 1
+!s100 M8]f==M=OOHBB>Go;7PDD3
+If<lQT:DlFLQno849X0QM=1
+R2
+R0
+w1532477665
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/convolution.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/convolution.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/convolution.v|
+!s90 -reportprogress|300|-work|work_convolution_first_line|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/convolution.v|
+!i113 1
+R5
+R6
+vd_ff
+Z7 !s110 1532477672
+!i10b 1
+!s100 BblLQ^P1@mLLh=PnO4Jgb2
+ImAPI6a5BDlnJE>X]jJD4k0
+R2
+R0
+w1532441865
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/d_ff.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/d_ff.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/d_ff.v|
+!s90 -reportprogress|300|-work|work_convolution_first_line|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/d_ff.v|
+!i113 1
+R5
+R6
+vmultiply
+R7
+!i10b 1
+!s100 ]kCOS=`1kbWM^6gj3Yhj41
+I?EbfPz_7nB]8;^Y^a0g253
+R2
+R0
+w1532436128
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/multiply.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/multiply.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1532477672.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/multiply.v|
+!s90 -reportprogress|300|-work|work_convolution_first_line|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/multiply.v|
+!i113 1
+R5
+R6
+vprocessing_element
+R7
+!i10b 1
+!s100 eM31mBJhkAUR]ThW2XhN83
+IGLB4=m;9eZ_9Xj8MBS^He3
+R2
+R0
+w1532444832
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/processing_element.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/processing_element.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/processing_element.v|
+!s90 -reportprogress|300|-work|work_convolution_first_line|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/processing_element.v|
+!i113 1
+R5
+R6
+vsaturation
+R7
+!i10b 1
+!s100 B55>Qo2S6k9>iOi>l3Mml0
+I0kZ^Z:KNXmZVQVlDQ[I4@0
+R2
+R0
+w1532477666
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/saturation.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/saturation.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/saturation.v|
+!s90 -reportprogress|300|-work|work_convolution_first_line|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/saturation.v|
+!i113 1
+R5
+R6
+vtb_convolution_3x3
+!s110 1532443041
+!i10b 1
+!s100 h8VJ[]TZ;>73P:>Mmjh;H0
+I0XE=fVlChX1_gNCIE<LMN2
+R2
+R0
+w1532431120
+Z9 8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_convolution.v
+Z10 FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_convolution.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1532443041.000000
+Z11 !s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_convolution.v|
+Z12 !s90 -reportprogress|300|-work|work_convolution_first_line|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_convolution.v|
+!i113 1
+R5
+R6
+vtb_convolution_first_line
+R1
+!i10b 1
+!s100 4F0JQ0<RO8iRF]R<Q<e8e2
+If@GoZ=4?:[Jk;<RiV:b3]1
+R2
+R0
+w1532473696
+R9
+R10
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R11
+R12
+!i113 1
+R5
+R6
+vtb_d_ff
+!s110 1532446501
+!i10b 1
+!s100 YOL_e;OP`R;F0X7Te=EI_0
+I4K9en8RR91jWUA[<mBgJo3
+R2
+R0
+w1532441965
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_d_ff.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_d_ff.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1532446501.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_d_ff.v|
+!s90 -reportprogress|300|-work|work_convolution_first_line|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_d_ff.v|
+!i113 1
+R5
+R6

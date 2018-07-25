@@ -1,0 +1,157 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution
+vadder
+Z0 !s110 1532481341
+!i10b 1
+!s100 NX0Fi2ALOdli3>4<jg2GC2
+I@K1mWgzeXM[dNAGFZhXRe0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2
+w1532436162
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/adder.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1532481341.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/adder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vconvolution_first_line
+R0
+!i10b 1
+!s100 E_UK7^I?<X^VRM7mn`AeN0
+I:hX43cQSWU_I=9Mb0]Qo>2
+R1
+R2
+w1532481009
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/convolution.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/convolution.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/convolution.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/convolution.v|
+!i113 1
+R5
+R6
+vd_ff
+R0
+!i10b 1
+!s100 BblLQ^P1@mLLh=PnO4Jgb2
+I_iz<OB2id^eRb3_@^6NdV1
+R1
+R2
+w1532441865
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/d_ff.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/d_ff.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/d_ff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/d_ff.v|
+!i113 1
+R5
+R6
+vmultiply
+R0
+!i10b 1
+!s100 ]kCOS=`1kbWM^6gj3Yhj41
+IdUB[F:oiml6V<Rn1CeYka2
+R1
+R2
+w1532436128
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/multiply.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/multiply.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/multiply.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/multiply.v|
+!i113 1
+R5
+R6
+vprocessing_element
+Z7 !s110 1532481342
+!i10b 1
+!s100 eM31mBJhkAUR]ThW2XhN83
+I`9;kS9WT3nZM0iljmGVS10
+R1
+R2
+w1532444832
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/processing_element.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/processing_element.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1532481342.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/processing_element.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/processing_element.v|
+!i113 1
+R5
+R6
+vsaturation
+R7
+!i10b 1
+!s100 Z4n[CeNjg_n`ncK5HN2CB1
+I6kNT6d7eAKc2MJ>R2niU12
+R1
+R2
+w1532479808
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/saturation.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/saturation.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/saturation.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/saturation.v|
+!i113 1
+R5
+R6
+vtb_convolution_first_line
+R0
+!i10b 1
+!s100 5<e8e99Mf2EAh4m6Icgh92
+IElRGk0CSEa4L@5bTj<X8E1
+R1
+R2
+w1532481119
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/tb_convolution.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/tb_convolution.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/tb_convolution.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution2/work/tb_convolution.v|
+!i113 1
+R5
+R6
