@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5
 vd_ff
-Z1 !s110 1532441970
+Z1 !s110 1532490890
 !i10b 1
 !s100 BblLQ^P1@mLLh=PnO4Jgb2
 IXPdFGTYo>kJI<2eM5lhd?1
@@ -23,14 +23,35 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1532441970.000000
+!s108 1532490889.000000
 !s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/d_ff.v|
 !s90 -reportprogress|300|-work|work_test_d_ff|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/d_ff.v|
 !i113 1
-Z5 o-work work_test_d_ff
-Z6 tCvgOpt 0
-vtb_d_ff
+Z4 o-work work_test_d_ff
+Z5 tCvgOpt 0
+vgenerate_d_ff
 R1
+!i10b 1
+!s100 ZY?c0CGIfONAD_=_9Fj1_2
+IUKEXBIFQ=V4=H;KhYmHzO1
+R2
+R0
+w1532437307
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/generate_d_ff.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/generate_d_ff.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z6 !s108 1532490890.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/generate_d_ff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/generate_d_ff.v|
+!i113 1
+Z7 o-work work
+R5
+vtb_d_ff
+!s110 1532490486
 !i10b 1
 !s100 YOL_e;OP`R;F0X7Te=EI_0
 I:8V0b6k:jOKaYW8G5A?`P3
@@ -44,9 +65,30 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1532490486.000000
 !s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_d_ff.v|
 !s90 -reportprogress|300|-work|work_test_d_ff|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_d_ff.v|
 !i113 1
+R4
 R5
+vtb_generate_d_ff
+R1
+!i10b 1
+!s100 N9oK>@GGhRi0a9APNfRcR1
+I=Q>]]`HU>kaaYJ=n<VX>m1
+R2
+R0
+w1532490885
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_generate_d_ff.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_generate_d_ff.v
+L0 1
+R3
+r1
+!s85 0
+31
 R6
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_generate_d_ff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_5x5/tb_generate_d_ff.v|
+!i113 1
+R7
+R5
