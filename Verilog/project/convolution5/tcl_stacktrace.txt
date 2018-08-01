@@ -1,0 +1,36 @@
+Thu Jul 26 14:41:35 JST 2018
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 346 255"
+    ("after" script)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+Thu Jul 26 19:25:46 JST 2018
+Trace back: can't read "Project(EchoCompileOutput)": no such element in array
+    while executing
+"lappend ProjectWriteArgs	$Project(EchoCompileOutput)"
+    (procedure "Project::saveProjectSpecificSettings" line 26)
+    invoked from within
+"Project::saveProjectSpecificSettings"
+    (procedure "quit" line 58)
+    invoked from within
+"quit"
+    (command for "WM_DELETE_WINDOW" window manager protocol)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't read "Project(EchoCompileOutput)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "Project(EchoCompileOutput)": no such element in array}
+Thu Jul 26 19:25:49 JST 2018
+Trace back: can't read "Project(EchoCompileOutput)": no such element in array
+    while executing
+"lappend ProjectWriteArgs	$Project(EchoCompileOutput)"
+    (procedure "Project::saveProjectSpecificSettings" line 26)
+    invoked from within
+"Project::saveProjectSpecificSettings"
+    (procedure "quit" line 58)
+    invoked from within
+"quit"
+    (command for "WM_DELETE_WINDOW" window manager protocol)
+  <2:C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't read "Project(EchoCompileOutput)": no such element in array}
+  <1:proc:137: ::tk::dialog::error::bgerror {can't read "Project(EchoCompileOutput)": no such element in array}

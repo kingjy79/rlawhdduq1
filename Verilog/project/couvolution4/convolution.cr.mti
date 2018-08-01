@@ -1,0 +1,73 @@
+C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/saturation.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/saturation.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module saturation
+
+Top level modules:
+	saturation
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/strore_weight.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/strore_weight.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module store_weight
+
+Top level modules:
+	store_weight
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/processing_element.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/processing_element.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module processing_element
+
+Top level modules:
+	processing_element
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/d_ff.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/d_ff.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module d_ff
+
+Top level modules:
+	d_ff
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/convolution_top_module.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/convolution_top_module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module convolution_top_module
+
+Top level modules:
+	convolution_top_module
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/adder.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/tb_convolution_top_module.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/tb_convolution_top_module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_convolution_top_module
+
+Top level modules:
+	tb_convolution_top_module
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/multiply.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/multiply.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module multiply
+
+Top level modules:
+	multiply
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/generate_d_ff.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/generate_d_ff.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module generate_d_ff
+
+Top level modules:
+	generate_d_ff
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/control.v {2 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module control
+** Warning: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/control.v(37): (vlog-2182) 'row' might be read before written in always_comb or always @* block.
+** Warning: C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/couvolution4/work/control.v(36): (vlog-2182) 'column' might be read before written in always_comb or always @* block.
+
+Top level modules:
+	control
+
+} {} {}}

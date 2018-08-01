@@ -47,11 +47,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	convolution
 
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution3/work/generate_d_ff.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution3/work/generate_d_ff.v
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution3/work/tb_convolution.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution3/work/tb_convolution.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module generate_d_ff
+-- Compiling module tb_convolution
 
 Top level modules:
-	generate_d_ff
+	tb_convolution
 
 } {} {}}
