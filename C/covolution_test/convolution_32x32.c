@@ -3,7 +3,7 @@
 
 int main(int argc, char const *argv[])
 {
-    #define PADDING 2
+    #define PADDING 0
     #define INPUT_HEIGHT 32
     #define INPUT_WIDTH 32
     #define KERNEL_WIDTH 5
@@ -241,6 +241,7 @@ int main(int argc, char const *argv[])
         }
     }
 */
+//    printf("\n%d, %d\n",output_width,output_height);
 
     for(int k=0; k<KERNEL_NUMBER; k++){//output_tensor에 convolution값이 들어간다.
         for(int h=0; h<output_height; h++){ 
