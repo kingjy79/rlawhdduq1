@@ -3,9 +3,9 @@
 
 int main(int argc, char const *argv[])
 {
-    #define PADDING 2
-    #define INPUT_HEIGHT 32
-    #define INPUT_WIDTH 32
+    #define PADDING 0
+    #define INPUT_HEIGHT 48
+    #define INPUT_WIDTH 48
     #define KERNEL_WIDTH 5
     #define KERNEL_HEIGHT 5
     #define KERNEL_NUMBER 5
@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
     printf("완료\n");
 */
 
-    FILE *fp_kernel = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_test\\w_in_1s.dat","r");
+    FILE *fp_kernel = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_project\\w_in_1s.dat","r");
     //파일 오픈
     int kernel_get[150]={0,};
     char kernel_buffer[10];//한줄당 크기
@@ -67,18 +67,18 @@ int main(int argc, char const *argv[])
     //printf("kernel_get[1]= %d\n", kernel_get[1]);
     
    
-
+/*
     //kernel_get이 잘실행되나 test
-    FILE *fp_kernel_print = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_test\\w_out_1s.dat","w");
+    FILE *fp_kernel_print = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_project\\w_out_1s.dat","w");
     for(int i=0; i<150; i++){
         fprintf(fp_kernel_print, "%d \n", (int)(kernel_get[i]));
     }
     fclose(fp_kernel_print);
+*/
 
 
 
-
-    FILE *fp_input = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_test\\x_in_1s.dat","r");
+    FILE *fp_input = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_project\\x_in_1s.dat","r");
     int input_get[1024]; //input_size:32*32
     char input_buffer[10];//한줄당 크기
     for(int i=0; i<1024; i++){//1024줄 이니깐 1024번 반복
@@ -241,7 +241,7 @@ int main(int argc, char const *argv[])
         }
     }
 */
-
+printf("test1");
     for(int k=0; k<KERNEL_NUMBER; k++){//output_tensor에 convolution값이 들어간다.
         for(int h=0; h<output_height; h++){ 
             for(int w=0; w<output_width; w++){
@@ -255,8 +255,8 @@ int main(int argc, char const *argv[])
             }            
         }
     }
-
-    FILE *fp_output = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_test\\y_out_1s.dat","w");
+printf("test2");
+    FILE *fp_output = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_project\\y_out_1s.dat","w");
     for(int k=0; k<output_number; k++){
         for(int i=0; i<output_height; i++){
             for(int j=0; j<output_width; j++){
@@ -266,15 +266,7 @@ int main(int argc, char const *argv[])
         }
     }
     fclose(fp_output);
-/*
-    for(int k=0; k<output_number; k++){
-        for(int i=0; i<output_height; i++){
-            for(int j=0; j<output_width;j++){
-                printf("output_tensor[%d][%d][%d]: %d",i,j,k,output_tensor[i][j][k]);
-            }
-        }
-    }
-*/
+
 
     return 0;
 }
