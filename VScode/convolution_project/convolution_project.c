@@ -4,11 +4,11 @@
 int main(int argc, char const *argv[])
 {
     #define PADDING 2
-    #define INPUT_HEIGHT 32
-    #define INPUT_WIDTH 32
+    #define INPUT_HEIGHT 48
+    #define INPUT_WIDTH 48
     #define KERNEL_WIDTH 5
     #define KERNEL_HEIGHT 5
-    #define KERNEL_NUMBER 5
+    #define KERNEL_NUMBER 6
     #define STRIDE 1
     //FILE *fpp;//파일포인터 -> fprintf에 사용되는 output용
     //FILE *fps;//파일포인터 -> fscanf에 사용되는 input용
@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
     printf("완료\n");
 */
 
-    FILE *fp_kernel = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\convolution_project\\w_in_1s.dat","r");
+    FILE *fp_kernel = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\convolution_project\\w_in_1s.dat","r");
     //파일 오픈
     int kernel_get[150]={0,};
     char kernel_buffer[10];//한줄당 크기
@@ -78,7 +78,7 @@ int main(int argc, char const *argv[])
 
 
 
-    FILE *fp_input = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\convolution_project\\x_in_1s.dat","r");
+    FILE *fp_input = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\python_conv_test\\jenny.txt","r");
     int input_get[1024]; //input_size:32*32
     char input_buffer[10];//한줄당 크기
     for(int i=0; i<1024; i++){//1024줄 이니깐 1024번 반복
@@ -241,7 +241,7 @@ int main(int argc, char const *argv[])
         }
     }
 */
-    printf("test1");
+
     for(int k=0; k<KERNEL_NUMBER; k++){//output_tensor에 convolution값이 들어간다.
         for(int h=0; h<output_height; h++){ 
             for(int w=0; w<output_width; w++){ 
@@ -257,11 +257,11 @@ int main(int argc, char const *argv[])
     }
     
 
-    FILE *fp_output = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\convolution_project\\y_out_1s.dat","w");
+    FILE *fp_output = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\convolution_project\\jenny_output.dat","w");
     for(int k=0; k<output_number; k++){
         for(int i=0; i<output_height; i++){
             for(int j=0; j<output_width; j++){
-                fprintf(fp_output, "%d\n", output_tensor[i][j][k]);
+                fprintf(fp_output, "0x%x\n", output_tensor[i][j][k]);
             }
             
         }
