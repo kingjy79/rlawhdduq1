@@ -1,16 +1,9 @@
-C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/saturation.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/saturation.v
+C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/strore_weight.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/strore_weight.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module saturation
+-- Compiling module store_weight
 
 Top level modules:
-	saturation
-
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution_first_line.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution_first_line.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module convolution_first_line
-
-Top level modules:
-	convolution_first_line
+	store_weight
 
 } {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/processing_element.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/processing_element.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -19,12 +12,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	processing_element
 
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution_top_module.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution_top_module.v
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution_first_line.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution_first_line.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module convolution_top_module
+-- Compiling module convolution_first_line
 
 Top level modules:
-	convolution_top_module
+	convolution_first_line
+
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/saturation.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/saturation.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module saturation
+
+Top level modules:
+	saturation
 
 } {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/d_ff.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/d_ff.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -33,19 +33,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	d_ff
 
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution.v
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution_top_module.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution_top_module.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module convolution
+-- Compiling module convolution_top_module
 
 Top level modules:
-	convolution
+	convolution_top_module
 
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/multiply.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/multiply.v
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/adder.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/adder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module multiply
+-- Compiling module adder
 
 Top level modules:
-	multiply
+	adder
 
 } {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/tb_convolution_top_module.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/tb_convolution_top_module.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -54,19 +54,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	tb_convolution_top_module
 
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/strore_weight.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/strore_weight.v
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/multiply.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/multiply.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module store_weight
+-- Compiling module multiply
 
 Top level modules:
-	store_weight
+	multiply
 
-} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/adder.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/adder.v
+} {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/convolution.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module adder
+-- Compiling module convolution
 
 Top level modules:
-	adder
+	convolution
 
 } {} {}} C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/generate_d_ff.v {1 {vlog -work work -stats=none C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution7/work/generate_d_ff.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

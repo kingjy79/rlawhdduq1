@@ -1,0 +1,220 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/18.0
+vadder
+Z0 !s110 1533195246
+!i10b 1
+!s100 NX0Fi2ALOdli3>4<jg2GC2
+Ik0nO>0EM9DzIZI2BS4f:d1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro
+w1532436164
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/adder.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1533195246.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/adder.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcontrol
+R0
+!i10b 1
+!s100 bTUeHK>h<U2UR^IM@YmL;2
+I6P^O]20i]O<9[KIIgSgSF2
+R1
+R2
+w1532936512
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/control.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/control.v|
+!i113 1
+R5
+R6
+vconvolution_top_module
+R0
+!i10b 1
+!s100 GHTQl2zW@b_1CK0^:?DEa1
+INilL8YhN3K::6YN=<dIdZ3
+R1
+R2
+w1532935620
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/convolution_top_module.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/convolution_top_module.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/convolution_top_module.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/convolution_top_module.v|
+!i113 1
+R5
+R6
+vd_ff
+R0
+!i10b 1
+!s100 BblLQ^P1@mLLh=PnO4Jgb2
+I_`@PKVUgeSLFMAfzHZLU`3
+R1
+R2
+w1532571698
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/d_ff.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/d_ff.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/d_ff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/d_ff.v|
+!i113 1
+R5
+R6
+vgenerate_d_ff
+R0
+!i10b 1
+!s100 OF5:H7OeP972AcAHUcMBM1
+I]S0kinVgjWZaeM]g<Mf<g3
+R1
+R2
+w1532502126
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/generate_d_ff.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/generate_d_ff.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/generate_d_ff.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/generate_d_ff.v|
+!i113 1
+R5
+R6
+vmultiply
+Z7 !s110 1533195247
+!i10b 1
+!s100 ]kCOS=`1kbWM^6gj3Yhj41
+I^d0;GfEEBc?ZDDSGDoRjO0
+R1
+R2
+w1532436130
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/multiply.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/multiply.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1533195247.000000
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/multiply.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/multiply.v|
+!i113 1
+R5
+R6
+vprocessing_element
+R7
+!i10b 1
+!s100 @HjP@>oeICU>R=`lm6`I71
+IFM;77nnU<;PY:FJ=N:eNR1
+R1
+R2
+w1532580736
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/processing_element.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/processing_element.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/processing_element.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/processing_element.v|
+!i113 1
+R5
+R6
+vsaturation
+R7
+!i10b 1
+!s100 Z4n[CeNjg_n`ncK5HN2CB1
+I4Yb[cK=9;;Wff29jd2N]f2
+R1
+R2
+w1532479810
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/saturation.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/saturation.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/saturation.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/saturation.v|
+!i113 1
+R5
+R6
+vstore_weight
+R7
+!i10b 1
+!s100 =g971nXGYlb@jAYAeKd6h2
+IR6nP50K]15ja36@KTIZ[S0
+R1
+R2
+w1532924908
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/strore_weight.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/strore_weight.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/strore_weight.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/strore_weight.v|
+!i113 1
+R5
+R6
+vtb_convolution_top_module
+R7
+!i10b 1
+!s100 IEnodb]2loJKcZPPXO4f71
+Ig[YE]KEMoRzT1]AjO0@HJ0
+R1
+R2
+w1532937540
+8C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/tb_convolution_top_module.v
+FC:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/tb_convolution_top_module.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/tb_convolution_top_module.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/kingjy79/Documents/rlawhdduq1/Verilog/project/convolution_pro/hdl/tb_convolution_top_module.v|
+!i113 1
+R5
+R6

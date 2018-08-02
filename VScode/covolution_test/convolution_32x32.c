@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
     printf("완료\n");
 */
 
-    FILE *fp_kernel = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_test\\w_in_1s.dat","r");
+    FILE *fp_kernel = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\covolution_test\\w_in_1s.dat","r");
     //파일 오픈
     int kernel_get[150]={0,};
     char kernel_buffer[10];//한줄당 크기
@@ -69,7 +69,7 @@ int main(int argc, char const *argv[])
    
 
     //kernel_get이 잘실행되나 test
-    FILE *fp_kernel_print = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_test\\w_out_1s.dat","w");
+    FILE *fp_kernel_print = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\covolution_test\\w_out_1s.dat","w");
     for(int i=0; i<150; i++){
         fprintf(fp_kernel_print, "%d \n", (int)(kernel_get[i]));
     }
@@ -78,7 +78,7 @@ int main(int argc, char const *argv[])
 
 
 
-    FILE *fp_input = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_test\\x_in_1s.dat","r");
+    FILE *fp_input = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\covolution_test\\x_in_1s.dat","r");
     int input_get[1024]; //input_size:32*32
     char input_buffer[10];//한줄당 크기
     for(int i=0; i<1024; i++){//1024줄 이니깐 1024번 반복
@@ -257,11 +257,11 @@ int main(int argc, char const *argv[])
         }
     }
 
-    FILE *fp_output = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\C\\covolution_test\\y_out_1s.dat","w");
+    FILE *fp_output = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\covolution_test\\y_out_1s.dat","w");
     for(int k=0; k<output_number; k++){
         for(int i=0; i<output_height; i++){
             for(int j=0; j<output_width; j++){
-                fprintf(fp_output, "%d\n", output_tensor[i][j][k]);
+                fprintf(fp_output, "0x%X\n", output_tensor[i][j][k]);
             }
             
         }

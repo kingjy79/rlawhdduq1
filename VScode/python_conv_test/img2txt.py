@@ -6,5 +6,5 @@ image = cv.imread('c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\python_co
 f = open('jenny.dat','w')
 for i in range(48):
     for j in range(48):
-        f.write(hex(image[i][j])+'\n') #10진수 표현(hex->str)
+        f.write(str(image[i][j])+'\n') #10진수 표현(hex->str)
 f.close()
