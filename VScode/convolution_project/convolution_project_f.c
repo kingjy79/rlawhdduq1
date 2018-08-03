@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
     #define STRIDE 1
     //FILE *fpp;//파일포인터 -> fprintf에 사용되는 output용
     //FILE *fps;//파일포인터 -> fscanf에 사용되는 input용
-    int temp=0;
+    float temp=0;
  
     
     //나중에 #define Size 100과 같이 parameter로 선언??
@@ -49,9 +49,9 @@ int main(int argc, char const *argv[])
     printf("완료\n");
 */
 
-    FILE *fp_kernel = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\convolution_project\\w_in_1s.dat","r");
+    FILE *fp_kernel = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\fprint_test\\w_random1.dat","r");
     //파일 오픈
-    int kernel_get[150]={0,};
+    float kernel_get[150]={0,};
     char kernel_buffer[10];//한줄당 크기
     for(int i=0; i<150; i++){//150줄 이니깐 150번 반복
         if(fp_kernel==NULL){
@@ -59,7 +59,7 @@ int main(int argc, char const *argv[])
         }
         else{
             fgets(kernel_buffer, 10, fp_kernel);
-            kernel_get[i]=atoi(kernel_buffer);
+            kernel_get[i]=(float)atof(kernel_buffer);
         }
     }
     fclose(fp_kernel);
@@ -79,7 +79,7 @@ int main(int argc, char const *argv[])
 
 
     FILE *fp_input = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\python_conv_test\\jenny.dat","r");
-    int input_get[2304]; //input_size:48*48
+    float input_get[2304]; //input_size:48*48
     char input_buffer[10];//한줄당 크기
     for(int i=0; i<2304; i++){//2304줄 이니깐 2304번 반복
         if(fp_kernel==NULL){
@@ -87,7 +87,7 @@ int main(int argc, char const *argv[])
         }
         else{
             fgets(input_buffer, 10, fp_kernel);
-            input_get[i]=atoi(input_buffer);
+            input_get[i]=(float)atof(input_buffer);
         }
     }
     fclose(fp_input);
@@ -111,10 +111,10 @@ int main(int argc, char const *argv[])
 
 
     //input 2차원 배열 동적배열로 선언
-    int **input_matrix;
-    input_matrix= (int**) malloc (sizeof(int*)*INPUT_HEIGHT);
+    float **input_matrix;
+    input_matrix= (float**) malloc (sizeof(float*)*INPUT_HEIGHT);
     for(int i=0; i<INPUT_HEIGHT;i++){
-        input_matrix[i]=(int*) malloc(sizeof(int)*INPUT_WIDTH);
+        input_matrix[i]=(float*) malloc(sizeof(float)*INPUT_WIDTH);
     }
     //배열 초기화
     for(int i=0; i<INPUT_HEIGHT; i++){
@@ -137,12 +137,12 @@ int main(int argc, char const *argv[])
 
 
     //output 3차원 동적 배열 할당
-    int ***output_tensor;
-    output_tensor= (int***) malloc (sizeof(int**)*output_height);
+    float ***output_tensor;
+    output_tensor= (float***) malloc (sizeof(float**)*output_height);
     for(int i=0; i<output_height;i++){
-        output_tensor[i]=(int**) malloc(sizeof(int*)*output_width);
+        output_tensor[i]=(float**) malloc(sizeof(float*)*output_width);
         for(int j=0; j<output_width;j++){
-            output_tensor[i][j]=(int*) malloc(sizeof(int)*output_number);
+            output_tensor[i][j]=(float*) malloc(sizeof(float)*output_number);
         }
     }
     //배열 초기화
@@ -158,12 +158,12 @@ int main(int argc, char const *argv[])
 
 
     //kernel 3차원 동적 배열 할당
-    int ***kernel_tensor;
-    kernel_tensor= (int***) malloc (sizeof(int**)*KERNEL_HEIGHT);
+    float ***kernel_tensor;
+    kernel_tensor= (float***) malloc (sizeof(float**)*KERNEL_HEIGHT);
     for(int i=0; i<KERNEL_HEIGHT;i++){
-        kernel_tensor[i]=(int**) malloc(sizeof(int*)*KERNEL_WIDTH);
+        kernel_tensor[i]=(float**) malloc(sizeof(float*)*KERNEL_WIDTH);
         for(int j=0; j<KERNEL_WIDTH;j++){
-            kernel_tensor[i][j]=(int*) malloc(sizeof(int)*KERNEL_NUMBER);
+            kernel_tensor[i][j]=(float*) malloc(sizeof(float)*KERNEL_NUMBER);
         }
     }
     //배열 초기화
@@ -197,10 +197,10 @@ int main(int argc, char const *argv[])
 */
     //padding의 값에 따라서 input size 재조정을 해줘야한다.
     //padding이 들어간 input 2차원 배열 동적배열로 선언
-    int **input_padding_matrix;
-    input_padding_matrix= (int**) malloc (sizeof(int*)*(INPUT_HEIGHT+(2*PADDING)));
+    float **input_padding_matrix;
+    input_padding_matrix= (float**) malloc (sizeof(float*)*(INPUT_HEIGHT+(2*PADDING)));
     for(int i=0; i<INPUT_HEIGHT+2*PADDING;i++){
-        input_padding_matrix[i]=(int*) malloc(sizeof(int)*(INPUT_WIDTH+(2*PADDING)));
+        input_padding_matrix[i]=(float*) malloc(sizeof(float)*(INPUT_WIDTH+(2*PADDING)));
     }
 
     
@@ -265,11 +265,11 @@ int main(int argc, char const *argv[])
     }
     
 
-    FILE *fp_output = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\convolution_project\\jenny_c.dat","w");
+    FILE *fp_output = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\convolution_project\\jenny_c_f.dat","w");
     for(int k=0; k<output_number; k++){
         for(int i=0; i<output_height; i++){
             for(int j=0; j<output_width; j++){
-                fprintf(fp_output, "%d\n", output_tensor[i][j][k]);
+                fprintf(fp_output, "%f\n", output_tensor[i][j][k]);
             }      
         }
     }
