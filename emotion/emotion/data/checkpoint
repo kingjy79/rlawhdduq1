@@ -1,2 +1,0 @@
-model_checkpoint_path: "/home/socmgr/project/emotion-recognition-neural-networks-master/data/Gudi_model_100_epochs_20000_faces"
-all_model_checkpoint_paths: "/home/socmgr/project/emotion-recognition-neural-networks-master/data/Gudi_model_100_epochs_20000_faces"

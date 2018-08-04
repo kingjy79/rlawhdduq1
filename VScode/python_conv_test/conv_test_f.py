@@ -65,5 +65,5 @@ for k in range(6):
     filtered = cv.filter2D(src=image, kernel=kernel_matrix_np[k], ddepth=-1,borderType= cv.BORDER_CONSTANT )
     for i in range(48):
         for j in range(48):
-            f.write(str(filtered[i][j])+'\n') #10진수 표현(hex->str)
+            f.write(hex(filtered[i][j])+'\n') #10진수 표현(hex->str)
 f.close()

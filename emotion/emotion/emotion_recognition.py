@@ -6,7 +6,7 @@ import tflearn
 from tflearn.layers.core import input_data, dropout, fully_connected, flatten
 from tflearn.layers.conv import conv_2d, max_pool_2d, avg_pool_2d
 from tflearn.layers.merge_ops import merge
-from tflearn.layers.normalization import local_response_normalization, batch_normalization
+from tflearn.layers.normalization import local_response_normalization
 from tflearn.layers.estimator import regression
 from constants import *
 from os.path import isfile, join
@@ -24,63 +24,17 @@ class EmotionRecognition:
         # https://github.com/tflearn/tflearn/blob/master/examples/images/alexnet.py
         print('[+] Building CNN')
         self.network = input_data(shape=[None, SIZE_FACE, SIZE_FACE, 1])
-        print('input data')
         print(input_data)
-        #convolution layer 1 
-        self.network = conv_2d(self.network, 64, 5,  activation='relu', weights_init='xavier')
-        print('conv1')
-        print(self.network)
+        self.network = conv_2d(self.network, 64, 5, activation='relu')
         #self.network = local_response_normalization(self.network)
-        self.network = batch_normalization(self.network)
         self.network = max_pool_2d(self.network, 3, strides=2)
-        print('maxp1')
-        print(self.network)
-        #convolution layer 2
-        self.network = conv_2d(self.network, 64, 5, activation='relu', weights_init='xavier')
-        print('conv2')
-        print(self.network)
+        self.network = conv_2d(self.network, 64, 5, activation='relu')
         self.network = max_pool_2d(self.network, 3, strides=2)
-        print('maxp2')
-        #convolution layer 3        
-        print(self.network)
-        self.network = conv_2d(self.network, 32, 1, activation='relu', weights_init='xavier')
-        self.network = conv_2d(self.network, 128, 5, activation='relu', weights_init='xavier')
-        self.network = conv_2d(self.network, 128, 5, activation='relu', weights_init='xavier')
-        print('conv2')
-        print(self.network)
-        self.network = max_pool_2d(self.network, 3, strides=2)
-        print('maxp2')
-        print(self.network)
-        #convolution layer 4 
-        print(self.network)
-        self.network = conv_2d(self.network, 32, 1, activation='relu', weights_init='xavier')
-        self.network = conv_2d(self.network, 128, 5, activation='relu', weights_init='xavier')
-        self.network = conv_2d(self.network, 128, 5, activation='relu', weights_init='xavier')
-        print('conv4')
-        print(self.network)
-        #self.network = max_pool_2d(self.network, 3, strides=2)
-        #print('maxp4')
-        #print(self.network)
-        #convolution layer 5
-        print(self.network)
-        self.network = conv_2d(self.network, 32, 1, activation='relu', weights_init='xavier')
-        self.network = conv_2d(self.network, 256, 3, activation='relu', weights_init='xavier')
-        self.network = conv_2d(self.network, 256, 3, activation='relu', weights_init='xavier')
-        print('conv5')
-        print(self.network)
+        self.network = conv_2d(self.network, 128, 4, activation='relu')
         self.network = dropout(self.network, 0.3)
-        #fully connected layer 1
-        self.network = fully_connected(self.network, 4096, activation='relu',weights_init='xavier' )
-        print('fc1')
-        print(self.network)
-        #fully connected layer 2
-        self.network = fully_connected(self.network, 1024, activation='relu',weights_init='xavier')
-        print('fc2')
-        print(self.network)
+        self.network = fully_connected(self.network, 3072, activation='relu')
         self.network = fully_connected(
             self.network, len(EMOTIONS), activation='softmax')
-        print('fc2')
-        print(self.network)
         self.network = regression(
             self.network,
             optimizer='momentum',

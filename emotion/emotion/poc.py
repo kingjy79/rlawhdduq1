@@ -10,6 +10,8 @@ from matplotlib import pyplot as plt
 from cycler import cycler
 from PIL import Image, ImageEnhance
 
+from tensorflow.python.tools import inspect_checkpoint as chkp
+
 cascade_classifier = cv2.CascadeClassifier(CASC_PATH)
 #print("first")
 #print(SIZE_FACE)
@@ -69,7 +71,10 @@ def format_image(image):
 # Load Model
 network = EmotionRecognition()
 network.build_network()
+# checkpoint 파일에 저장된 weight 보는 방법
 
+chkp.print_tensors_in_checkpoint_file('C:\\Users\\kingjy79\\Documents\\rlawhdduq1\\emotion\\emotion\\data\
+\\Gudi_model_100_epochs_20000_faces', tensor_name='', all_tensors=True)
 video_capture = cv2.VideoCapture(sys.argv[1]) #sys.argv[0];명령어 다음, sys.argv[1];명령어 다음다음;
 
 #video_capture = cv2.VideoCapture(0)

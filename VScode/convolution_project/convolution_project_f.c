@@ -269,7 +269,7 @@ int main(int argc, char const *argv[])
     for(int k=0; k<output_number; k++){
         for(int i=0; i<output_height; i++){
             for(int j=0; j<output_width; j++){
-                fprintf(fp_output, "%f\n", output_tensor[i][j][k]);
+                fprintf(fp_output, "0x%X\n", (int)((output_tensor[i][j][k]*1.0e1+0.5e1)/(1.0e1)));
             }      
         }
     }
