@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
     else{
         for(int i=0; i<1600; i++){
             fgets(kernel_buffer, 25, fp_kernel);
-            kernel_get[i]=(long long)(atof(kernel_buffer)*1e5);
+            kernel_get[i]=(long long)(atof(kernel_buffer)*1e5); //resolution 10^6(significant)
         }
     }
     fclose(fp_kernel);

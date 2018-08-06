@@ -43,8 +43,7 @@ int main(int argc, char const *argv[])
                     kernel_get=buffer[i];
                     fputc(kernel_get, fp_output);
                 }
-        if((buffer[i-3]=='e' && buffer[i-2]=='-' && buffer[i-1]=='0') &&\
-                (buffer[i]=='1' || buffer[i]=='2' || buffer[i] =='3' || buffer[i] == '4')){
+        if((buffer[i-3]=='e' && buffer[i-2]=='-' && buffer[i-1]=='0')){
                     fputc('\n', fp_output);
                 }   
 

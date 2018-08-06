@@ -50,6 +50,7 @@ def print_tensors_in_checkpoint_file(file_name, tensor_name, all_tensors,
     if all_tensors or all_tensor_names:
       var_to_shape_map = reader.get_variable_to_shape_map()
       for key in sorted(var_to_shape_map):
+        
         print("tensor_name: ", key)
         if all_tensors:
           print(reader.get_tensor(key))
@@ -57,8 +58,13 @@ def print_tensors_in_checkpoint_file(file_name, tensor_name, all_tensors,
     elif not tensor_name:
       print(reader.debug_string().decode("utf-8"))
     else:
+      
       print("tensor_name: ", tensor_name)
-      print(reader.get_tensor(tensor_name))
+      #print(reader.get_tensor(tensor_name))
+      #reshape_weight=np.reshape(reader.get_tensor(tensor_name), (-1,1600))
+      shape1=reader.get_tensor(tensor_name)
+      np.savetxt("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\fprint_test\\w_trained.dat",shape1.flatten())
+      print("pass1")
     #f.close()
   except Exception as e:  # pylint: disable=broad-except
     print(str(e))
