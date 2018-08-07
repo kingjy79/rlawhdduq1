@@ -105,7 +105,5 @@ if __name__ == "__main__":
         network.save_model()
     elif sys.argv[1] == 'poc':
         import poc
-    elif sys.argv[1] == 'yeob':
-        network.load_model()
     else:
         show_usage()

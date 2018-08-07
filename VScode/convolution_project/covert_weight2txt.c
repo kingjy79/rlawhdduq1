@@ -3,6 +3,7 @@
 
 int main(int argc, char const *argv[])
 {
+    #define RESOLUTION 1e7
     FILE *fp_kernel = fopen("c:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VSCODE\\fprint_test\\w_trained1.dat","r");
     //파일 오픈
     long long kernel_get[102400] = {0,};
@@ -15,7 +16,13 @@ int main(int argc, char const *argv[])
     else{
         for(int i=0; i<102400; i++){
             fgets(kernel_buffer, 30, fp_kernel);
-            kernel_get[i]=(long long)(atof(kernel_buffer)*1e7); //resolution 10^6(significant)
+            kernel_get[i]=(long long)(atof(kernel_buffer)*RESOLUTION); //resolution 10^6(significant)
+            if(kernel_get[i]<-0.2*RESOLUTION){
+                kernel_get[i]=-0.2*RESOLUTION;
+            }
+            else if (kernel_get[i]>=0.2*RESOLUTION){
+                kernel_get[i]=0.2*RESOLUTION;
+            }
         }
     }
     fclose(fp_kernel);
