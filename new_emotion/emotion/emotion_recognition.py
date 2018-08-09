@@ -13,14 +13,6 @@ from os.path import isfile, join
 import random
 import sys
 
-import argparse
-import sys
-#C:\Users\kingjy79\anaconda\envs\tensorflow\Lib\site-packages\tensorflow\python\training\saver.py
-from tensorflow.python.training import saver #weight 출력
-from tensorflow.python import pywrap_tensorflow
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
-
 
 class EmotionRecognition:
 
@@ -33,12 +25,10 @@ class EmotionRecognition:
         print('[+] Building CNN')
         self.network = input_data(shape=[None, SIZE_FACE, SIZE_FACE, 1])
         print(input_data)
-        self.network = conv_2d(self.network, 64, 5, activation='relu')
+        self.network = conv_2d(self.network, 32, 5, activation='relu')
         #self.network = local_response_normalization(self.network)
-        self.network = max_pool_2d(self.network, 3, strides=2)
+        #self.network = max_pool_2d(self.network, 3, strides=2)
         self.network = conv_2d(self.network, 64, 5, activation='relu')
-        layer1 = tflearn.get_layer_variables_by_name('Conv2D_1')
-        #print(layer1)
         self.network = max_pool_2d(self.network, 3, strides=2)
         self.network = conv_2d(self.network, 128, 4, activation='relu')
         self.network = dropout(self.network, 0.3)
@@ -57,7 +47,6 @@ class EmotionRecognition:
             tensorboard_verbose=2
         )
         self.load_model()
-        
 
     def load_saved_dataset(self):
         self.dataset.load_from_save()
@@ -87,10 +76,6 @@ class EmotionRecognition:
         if image is None:
             return None
         image = image.reshape([-1, SIZE_FACE, SIZE_FACE, 1])
- 
-        #print(self.model.get_weights(self.network))
-
-
         return self.model.predict(image)
 
     def save_model(self):

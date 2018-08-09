@@ -1,6 +1,7 @@
 from __future__ import division, absolute_import
 import re
 import numpy as np
+import tensorflow as tf 
 from dataset_loader import DatasetLoader
 import tflearn
 from tflearn.layers.core import input_data, dropout, fully_connected, flatten
@@ -13,14 +14,6 @@ from os.path import isfile, join
 import random
 import sys
 
-import argparse
-import sys
-#C:\Users\kingjy79\anaconda\envs\tensorflow\Lib\site-packages\tensorflow\python\training\saver.py
-from tensorflow.python.training import saver #weight 출력
-from tensorflow.python import pywrap_tensorflow
-from tensorflow.python.platform import app
-from tensorflow.python.platform import flags
-
 
 class EmotionRecognition:
 
@@ -32,15 +25,16 @@ class EmotionRecognition:
         # https://github.com/tflearn/tflearn/blob/master/examples/images/alexnet.py
         print('[+] Building CNN')
         self.network = input_data(shape=[None, SIZE_FACE, SIZE_FACE, 1])
-        print(input_data)
-        self.network = conv_2d(self.network, 64, 5, activation='relu')
+        #print(input_data)
+        self.network = conv_2d(self.network, 64, 5, activation='relu', padding='valid')
+        #print(self.network)
         #self.network = local_response_normalization(self.network)
         self.network = max_pool_2d(self.network, 3, strides=2)
-        self.network = conv_2d(self.network, 64, 5, activation='relu')
-        layer1 = tflearn.get_layer_variables_by_name('Conv2D_1')
-        #print(layer1)
-        self.network = max_pool_2d(self.network, 3, strides=2)
-        self.network = conv_2d(self.network, 128, 4, activation='relu')
+        self.network = conv_2d(self.network, 64, 5, activation='relu', padding='valid')
+        #print(self.network)
+        #self.network = max_pool_2d(self.network, 3, strides=2)
+        self.network = conv_2d(self.network, 128, 3, activation='relu', padding='valid')
+        #print(self.network)
         self.network = dropout(self.network, 0.3)
         self.network = fully_connected(self.network, 3072, activation='relu')
         self.network = fully_connected(
@@ -57,7 +51,19 @@ class EmotionRecognition:
             tensorboard_verbose=2
         )
         self.load_model()
-        
+        convolution_layer1 = tflearn.variables.get_layer_variables_by_name('Conv2D')[0]
+        print(convolution_layer1)
+        convolution_layer1_weight = self.model.get_weights(convolution_layer1)
+        print(convolution_layer1_weight)
+        #convloution_layer1를 numpy로 변환
+        #convolution_layer1 = np.asarray(convolution_layer1)
+        #convolution_layer2 = tf.convert_to_tensor(convolution_layer1)
+        #여기서부터
+        #여기까지는 배열을 만들기위한 장치입니다.
+        self.model.set_weights(convolution_layer1, convolution_layer1*10) # 이 위치의 두번째 인자에 원하고자하는 weight(tensor형식) 값을 넣으면 된다.
+        #self.model.set_weights(convolution_layer1, convolution_layer1 + tf.ones([5, 5, 1, 64]))
+        convolution_layer1_weight = self.model.get_weights(convolution_layer1)
+        print(convolution_layer1_weight)
 
     def load_saved_dataset(self):
         self.dataset.load_from_save()
@@ -87,10 +93,6 @@ class EmotionRecognition:
         if image is None:
             return None
         image = image.reshape([-1, SIZE_FACE, SIZE_FACE, 1])
- 
-        #print(self.model.get_weights(self.network))
-
-
         return self.model.predict(image)
 
     def save_model(self):
@@ -120,5 +122,7 @@ if __name__ == "__main__":
         network.save_model()
     elif sys.argv[1] == 'poc':
         import poc
+    elif sys.argv[1] == 'yeob':
+        network.load_model()
     else:
         show_usage()
