@@ -51,19 +51,32 @@ class EmotionRecognition:
             tensorboard_verbose=2
         )
         self.load_model()
-        convolution_layer1 = tflearn.variables.get_layer_variables_by_name('Conv2D')[0]
-        print(convolution_layer1)
-        convolution_layer1_weight = self.model.get_weights(convolution_layer1)
-        print(convolution_layer1_weight)
+        convolution_layer2 = tflearn.variables.get_layer_variables_by_name('Conv2D_1')[0] #return은 tensor
+        print(convolution_layer2)
+        convolution_layer2_weight = self.model.get_weights(convolution_layer2) #return은 numpy임
+        print(convolution_layer2_weight)
+        np.savetxt('C:\\Users\\kingjy79\\Documents\\rlawhdduq1\\pn_emotion_copy3\\emotion\\data\\convolution_layer2_weight.txt', X=convolution_layer2_weight.flatten(), fmt='%.5e' )
         #convloution_layer1를 numpy로 변환
+        convolution_layer2_weight_file0 = open('C:\\Users\\kingjy79\\Documents\\rlawhdduq1\\pn_emotion_copy3\\emotion\\data\\convolution_layer2_weight.txt','r')
+        convolution_layer2_weight_modify = []
+        for i in range(102400):
+            line = float(convolution_layer2_weight_file0.readline())
+            convolution_layer2_weight_modify.append(line)
+        convolution_layer2_weight_file0.close()
+        convolution_layer2_weight_modify = np.asarray(convolution_layer2_weight_modify)
+        print('non reshape')
+        print(convolution_layer2_weight_modify)
+        convolution_layer2_weight_modify = np.reshape(convolution_layer2_weight_modify,[5, 5, 64, 64])
+        print('reshape')
+        print(convolution_layer2_weight_modify)
+
+
         #convolution_layer1 = np.asarray(convolution_layer1)
         #convolution_layer2 = tf.convert_to_tensor(convolution_layer1)
-        #여기서부터
-        #여기까지는 배열을 만들기위한 장치입니다.
-        self.model.set_weights(convolution_layer1, convolution_layer1*10) # 이 위치의 두번째 인자에 원하고자하는 weight(tensor형식) 값을 넣으면 된다.
+        #self.model.set_weights(convolution_layer1, convolution_layer1*10) # 이 위치의 두번째 인자에 원하고자하는 weight(tensor형식) 값을 넣으면 된다.
         #self.model.set_weights(convolution_layer1, convolution_layer1 + tf.ones([5, 5, 1, 64]))
-        convolution_layer1_weight = self.model.get_weights(convolution_layer1)
-        print(convolution_layer1_weight)
+        #convolution_layer1_weight = self.model.get_weights(convolution_layer1)
+        #print(convolution_layer1_weight)
 
     def load_saved_dataset(self):
         self.dataset.load_from_save()
@@ -122,7 +135,5 @@ if __name__ == "__main__":
         network.save_model()
     elif sys.argv[1] == 'poc':
         import poc
-    elif sys.argv[1] == 'yeob':
-        network.load_model()
     else:
         show_usage()
