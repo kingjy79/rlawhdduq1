@@ -6,7 +6,7 @@ s= np.random.normal(mu,sigma, 102400)
 
 data_f = np.zeros(102400)
 
-data = open("C:\\Users\\kingjy79\\Documents\\rlawhdduq1\\VScode\\fprint_test\\w_trained1.dat",'r')
+data = open('C:\\Users\\kingjy79\\Documents\\rlawhdduq1\\pn_emotion_copy3\\emotion\\data\\convolution_layer2_weight.txt','r')
 
 for i in range(102400):
     data_f[i] = data.readline()
@@ -17,6 +17,6 @@ data.close()
 count, bins, ignored = plt.hist(data_f,100, normed=True)
 for i in range(102400):
     plt.plot(i, data_f[i])
-#plt.plot(bins, 1/(sigma*np.sqrt(2*np.pi))*np.exp(-(bins-mu)**2/(2*sigma**2)),linewidth=2, color='r')
+plt.plot(bins, 1/(sigma*np.sqrt(2*np.pi))*np.exp(-(bins-mu)**2/(2*sigma**2)),linewidth=2, color='r')
 
 plt.show()

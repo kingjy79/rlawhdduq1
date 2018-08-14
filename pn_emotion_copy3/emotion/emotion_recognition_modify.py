@@ -59,7 +59,7 @@ class EmotionRecognition:
         print(convolution_layer2_weight)
         np.savetxt('C:\\Users\\kingjy79\\Documents\\rlawhdduq1\\pn_emotion_copy3\\emotion\\data\\convolution_layer2_weight.txt', X=convolution_layer2_weight.flatten(), fmt='%.6f' )
         #convloution_layer1를 numpy로 변환
-        convolution_layer2_weight_file0 = open('C:\\Users\\kingjy79\\Documents\\rlawhdduq1\\pn_emotion_copy3\\emotion\\data\\convolution_layer2_weight.txt','r')
+        convolution_layer2_weight_file0 = open('C:\\Users\\kingjy79\\Documents\\rlawhdduq1\\pn_emotion_copy3\\emotion\\data\\convolution_layer2_weight_modify.txt','r')
         convolution_layer2_weight_modify = []
         for i in range(102400):
             line = float(convolution_layer2_weight_file0.readline())

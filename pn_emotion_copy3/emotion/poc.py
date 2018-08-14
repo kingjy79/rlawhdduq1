@@ -70,7 +70,7 @@ def format_image(image):
 network = EmotionRecognition()
 network.build_network()
 
-video_capture = cv2.VideoCapture(sys.argv[1]) #sys.argv[0];명령어 다음, sys.argv[1];명령어 다음다음;
+video_capture = cv2.VideoCapture(sys.argv[2]) #sys.argv[0];명령어 다음, sys.argv[1];명령어 다음다음;
 
 #video_capture = cv2.VideoCapture(0)
 font = cv2.FONT_HERSHEY_SIMPLEX
